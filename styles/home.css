@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
   box-sizing: border-box;
 }
 
@@ -15,23 +16,25 @@ html, body {
 
 .header {
   width: 100%;
-  height: 5%;
+  padding: 30px 0px;
+  position: fixed;
+  background-color: #fff;
   display: flex;
   align-items: center;
 }
-.header div {
+.header .limited-width {
   width: 1024px;
   display: flex;
   justify-content: space-between;
 }
-.header div a {
+.header .limited-width a {
   text-decoration: none;
   color: #000000;
 }
-.header div a span {
+.header .limited-width a span {
   color: blue;
 }
-.header div nav {
+.header .limited-width nav {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -56,4 +59,116 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.content-container .welcome {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.content-container .welcome section:first-child {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.content-container .welcome .img-quartos-container {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.content-container .welcome .img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  flex-grow: 1;
+}
+.content-container .welcome .img-container img {
+  width: 300px;
+}
+.content-container .welcome .img-container .line {
+  width: 300px;
+  background-color: green;
+  height: 2px;
+}
+.content-container #rota {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.content-container #rota section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.content-container #rota iframe {
+  width: 98vw;
+}
+.content-container #sobre {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding-bottom: 50px;
+}
+.content-container #sobre section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.content-container #sobre .container-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+.content-container #sobre .container-cards .card {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.content-container #sobre .container-cards .card img {
+  width: 100px;
+}
+.content-container #sobre .container-cards .card h3 {
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: rgb(58, 107, 58);
+  color: #fff;
+}
+.footer .limited-width {
+  display: flex;
+  flex-direction: column;
+}
+.footer .limited-width .contacts {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  padding: 20px;
+}
+.footer .limited-width .contacts a, .footer .limited-width .contacts aside {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer .limited-width .copy {
+  text-align: center;
+  padding: 20px;
 }/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}
+
+.limited-width {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    padding: 30px 0px;
+
+    position: fixed;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+
+    .limited-width {
+       width: 1024px;
+
+       display: flex;
+       justify-content: space-between;
+
+        a {
+            text-decoration: none;
+            color: #000000;
+
+            span {
+                color: blue;
+            }
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+}
+
+#banner {
+    height: 30%;
+    background: fixed url('../images/img-fundo.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.quartos {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .container-img{
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        img {
+            width: 330px;
+            height: 220px;
+        }
+    }
+
+    ul {
+        width: 96%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 120px;
+        row-gap: 20px;
+
+        padding-left: 20px;
+
+       li {
+        flex-shrink: 1;
+       }
+    }
+
+}
+
+.footer {
+    background-color: rgb(58, 107, 58);
+    color: #fff;
+
+    .limited-width {
+        display: flex;
+        flex-direction: column;
+
+        .contacts {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 25px;
+
+            padding: 20px 0px;
+
+            a, aside {
+                text-decoration: none;
+                color: #fff;
+
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+
+        .copy{
+            text-align: center;
+            padding: 20px;
+        }
+    }
+}

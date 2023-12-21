@@ -1,1 +1,107 @@
-/*# sourceMappingURL=quartos.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+}
+
+.limited-width {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  padding: 30px 0px;
+  position: fixed;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.header .limited-width {
+  width: 1024px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .limited-width a {
+  text-decoration: none;
+  color: #000000;
+}
+.header .limited-width a span {
+  color: blue;
+}
+.header .limited-width nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#banner {
+  height: 30%;
+  background: fixed url("../images/img-fundo.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.quartos {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.quartos .container-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.quartos .container-img img {
+  width: 330px;
+  height: 220px;
+}
+.quartos ul {
+  width: 96%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  -moz-column-gap: 120px;
+       column-gap: 120px;
+  row-gap: 20px;
+  padding-left: 20px;
+}
+.quartos ul li {
+  flex-shrink: 1;
+}
+
+.footer {
+  background-color: rgb(58, 107, 58);
+  color: #fff;
+}
+.footer .limited-width {
+  display: flex;
+  flex-direction: column;
+}
+.footer .limited-width .contacts {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  padding: 20px 0px;
+}
+.footer .limited-width .contacts a, .footer .limited-width .contacts aside {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer .limited-width .copy {
+  text-align: center;
+  padding: 20px;
+}/*# sourceMappingURL=quartos.css.map */
